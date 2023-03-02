@@ -21,6 +21,10 @@
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   --max-width: 1170px;
   --fixed-width: 450px;
+  --clr-red: #e71d36;
+  --clr-green: #7ddf64;
+  --clr-body: #f4b9b2;
+  --clr-content: #daedbd;
 }
 
 html {
@@ -100,4 +104,27 @@ p {
   .section {
     width: 95vw;
   }
+}
+body{
+    background-color: var(--clr-body);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    background-color: var(--clr-content);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
 }

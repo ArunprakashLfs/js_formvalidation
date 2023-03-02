@@ -14,7 +14,7 @@
     <!-- favicon -->
     <link
       rel="shortcut icon"
-      href="./assets/images/favicon.png"
+      href="./assets/images/icons8-google-forms-48.png"
       type="image/x-icon"
     />
     <title>Form Validation</title>
@@ -37,10 +37,30 @@
     <!-- custom css -->
     <link
       rel="stylesheet"
-      href="./styles/style.css"
+      href="./style/style.css"
     />
   </head>
   <body>
+    <form class="form">
+        <h1>Register Form</h1>
+        <div class="form-container">
+            <label for="username">User Name</label>
+            <input type="text" name="username" class="inputValue" id="username" placeholder="enter your Name">
+        </div>
+        <div class="form-container">
+            <label for="email">Email Address</label>
+            <input type="email" class="inputValue" name="email" id="email" placeholder="Enter Email address">
+        </div>
+        <div class="form-container">
+            <label for="password">Password</label>
+            <input type="password" class="inputValue" name="password" id="password" placeholder="Enter password">
+        </div>
+        <div class="form-container">
+            <label for="confirmpassword">Confirmpassword</label>
+            <input type="text" class="inputValue" name="confirmpassword" id="confirmpassword" placeholder="Confirm password">
+        </div>
+        <button type="submit" value="submit">submit</button>
+    </form>
     <!-- custom js -->
     <script src="./scripts/script.js"></script>
   </body>
