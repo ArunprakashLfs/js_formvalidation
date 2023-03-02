@@ -43,25 +43,30 @@
   <body>
     <form class="form">
         <h1>Register Form</h1>
+        <hr>
         <div class="form-container">
             <label for="username">User Name</label>
-            <input type="text" name="username" class="inputValue" id="username" placeholder="enter your Name">
+            <input type="text" name="username" class="inputValue" id="username" placeholder="Enter your Name">
+            <small class="outputvalue">Enter proper value</small>
         </div>
         <div class="form-container">
             <label for="email">Email Address</label>
             <input type="email" class="inputValue" name="email" id="email" placeholder="Enter Email address">
+            <small class="outputvalue">Enter proper value</small>
         </div>
         <div class="form-container">
             <label for="password">Password</label>
             <input type="password" class="inputValue" name="password" id="password" placeholder="Enter password">
+            <small class="outputvalue">Enter proper value</small>
         </div>
         <div class="form-container">
             <label for="confirmpassword">Confirm password</label>
             <input type="text" class="inputValue" name="confirmpassword" id="confirmpassword" placeholder="Confirm password">
+            <small class="outputvalue">Enter proper value</small>
         </div>
-        <button type="submit" value="submit">submit</button>
+        <button type="submit" value="submit" class="submit" id="submit">submit</button>
     </form>
     <!-- custom js -->
-    <script src="./scripts/script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
