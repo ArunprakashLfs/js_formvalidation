@@ -128,3 +128,6 @@ body{
     flex-direction: column;
     gap: 0.7rem;
 }
+.inputValue{
+    padding: 0.4rem;
+}
