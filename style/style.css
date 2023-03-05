@@ -153,8 +153,18 @@ hr{
 }
 .outputvalue{
     color: #e71d36;
-    /* visibility: hidden; */
+    visibility: hidden; 
 }
-#submit:hover{
-    border: 5px solid var(--clr-red);
+#submit:hover {
+  transform: translateY(10px);
+  cursor: pointer;
+}
+.form-container.error small {
+  visibility: visible;
+}
+.form-container.error Input {
+  border-color: red;
+}
+.form-container.success Input {
+  border-color: green;
 }
