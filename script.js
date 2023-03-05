@@ -12,8 +12,8 @@ const emailEl = document.getElementById("email");
 const errorFunction = (element, message) => {
     let formControl = element.parentElement;
     // console.log(formControl);
-    formControl.className = "form-control error";
-    let small = formControl.querySelector(".small");
+    formControl.className = "form-container error";
+    let small = formControl.querySelector(".outputvalue");
     // console.log(small);
     small.innerText = `${message} is invalid!`;
   };
@@ -21,7 +21,7 @@ const errorFunction = (element, message) => {
   //success function
   const successFunction = (element) => {
     let formControl = element.parentElement;
-    formControl.className = "form-control success";
+    formControl.className = "form-container success";
   };
 
 //Event listners
@@ -31,39 +31,42 @@ formEl.addEventListener("submit", (e) => {
     let email = emailEl.value.trim();
     let password = passwordEl.value.trim();
     let confirmpassword = confirmpasswordEl.value.trim();
-
-    
     if (username) {
         successFunction(usernameEl);
-      } else {
+    } 
+    else {
         errorFunction(usernameEl, "Username");
-      }
-      if (email) {
+    }
+    if (email) {
         successFunction(emailEl);
-      } else {
+    } 
+    else {
         errorFunction(emailEl, "E-mail");
-      }
-      if (password) {
+    }
+    if (password) {
         successFunction(passwordEl);
-      } else {
+    } 
+    else {
         errorFunction(passwordEl, "Password");
-      }
-      if (confirmpassword) {
+    }
+    if (confirmpassword) {
         //password === confirm password
         if (password === confirmpassword) {
-          successFunction(confirmpasswordEl);
-        } else {
-          errorFunction(
-            confirmpasswordEl,
-            "confirm-password not matched to previous one so it"
-          );
-        }
-      } else {
+            successFunction(confirmpasswordEl);
+        } 
+        else {
+            errorFunction(
+                confirmpasswordEl,
+                "confirm-password not matched to previous one so it"
+                );
+            }
+    } 
+    else {
         errorFunction(confirmpasswordEl, "Confirm Password");
-      }
+    }
     
       // console.log(userName);
       // console.log(email);
       // console.log(password);
       // console.log(confirmPassword);
-    });
+});
