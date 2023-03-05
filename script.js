@@ -32,8 +32,8 @@ formEl.addEventListener("submit", (e) => {
     let password = passwordEl.value.trim();
     let confirmpassword = confirmpasswordEl.value.trim();
 
-    checkRequired(input);
-    if (userName) {
+    
+    if (username) {
         successFunction(usernameEl);
       } else {
         errorFunction(usernameEl, "Username");
